@@ -2,13 +2,15 @@
 
 # Author: Muhammad Zeeshan
 
-# Use ecommerce app
+## 🧭 App Navigation Guide
 
-home page : npm start or click Brand logo
-cart : click on cart icon on Right side header menu (you can add reomve and save of given products)
-product details : click on the product in Recommend Products
-list view : click in the categories in Banner section
-grid view: click in the categories in Banner section and then click aobe grid menu button
+| 🔗 Section             | 📝 Description                                                                    |
+| ---------------------- | --------------------------------------------------------------------------------- |
+| 🏠 **Home Page**       | Run `npm start` or click the **Brand Logo** to return to the homepage             |
+| 🛍️ **Cart**            | Click the **Cart Icon** in the header (top-right) to view and manage products     |
+| 📦 **Product Details** | Click a product in **Recommended Products** to see more info                      |
+| 📃 **List View**       | Click a **Category** in the **Banner** section to view products in list style     |
+| 🗃️ **Grid View**       | After selecting a category, click the **Grid Menu Button** to switch to grid view |
 
 ## Available Scripts
 
