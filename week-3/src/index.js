@@ -9,7 +9,6 @@ import './responsive.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 // import 'font-awesome/css/font-awesome.css';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
-import './assets/fonts/fonts.css';
 
 // import './utils/script.js'; //error
 
