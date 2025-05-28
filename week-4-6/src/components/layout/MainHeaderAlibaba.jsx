@@ -3,105 +3,159 @@ import { Link } from 'react-router-dom';
 
 const MainHeaderAlibaba = () => {
   return (
-    <div className="header-main bg-white border-bottom py-lg-3 py-2">
-      <div className="container">
-        <div className="row gx-2 align-items-center">
-          <div className="col-xl-2 col-lg col-6 col-sm-6  col-md flex-grow-0">
-            <a href="/" className="brand-wrap me-3">
-              <img
-                className="logo"
-                height="40"
-                src="/images/logo.jpg"
-                alt="logo"
-              />
-            </a>
-          </div>
-
-          <div className="col-xl-7 col-lg-5 col-12 col-sm-12 col-md">
-            <form action="#" className="search my-3 my-lg-0 ms-xl-4">
-              <div className="input-group">
+    <>
+      {/* <!-- FOR MOBILE  --> */}
+      <header class="mobile-header-top">
+        <div class="mobile-header-content">
+          <a href="/" class="brand-wrap me-2">
+            <img
+              className="logo"
+              height="40"
+              src="/images/logo.jpg"
+              alt="logo"
+            />
+          </a>
+          <div class="flex-grow-1">
+            <form action="#" class="search my-3 my-lg-0 ms-xl-4">
+              <div class="input-group">
                 <input
                   type="search"
-                  className="form-control"
+                  class="form-control"
                   style={{ width: '55%' }}
                   placeholder="Search"
                 />
-                <select className="form-select">
-                  <option value="">All type</option>
-                  <option value="codex">Special</option>
-                  <option value="comments">Only best</option>
-                  <option value="content">Latest</option>
-                </select>
-                <button className="btn btn-primary">
-                  <i className="fa fa-search"></i>
+                <button class="btn btn-light">
+                  <i class="fa fa-search"></i>
                 </button>
               </div>
             </form>
           </div>
+        </div>
+      </header>
 
-          <div className="col-xl-3 col-lg-4 col-md-12 col-12">
-            <nav className="d-flex justify-content-end ms-4">
-              <div className="col mx-2 text-center">
-                <a
-                  href="page-user-signup.html"
-                  className="text-muted hover:text-dark removeLine"
-                >
-                  <span className="fs-5 d-inline-block">
-                    <i className="fa fa-user"></i>
-                  </span>
-                  <small className="d-block text-dark text-truncate ">
-                    Profile
-                  </small>
+      <nav class="mobile-nav-bottom">
+        <div class="mobile-nav-content">
+          <a href="#n" class="nav-link">
+            <i class="icon fa fa-home"></i>
+            <span class="text">Home</span>
+          </a>
+          <a href="#null" class="nav-link">
+            <i class="icon fa fa-box"></i>
+            <span class="text">Category</span>
+          </a>
+          <Link to="/product/cart" class="nav-link">
+            <i class="icon fa fa-shopping-cart"></i>
+            <span class="text">My cart</span>
+          </Link>
+          <a href="#n" class="nav-link">
+            <i class="icon fa fa-user"></i>
+            <span class="text">Profile</span>
+          </a>
+        </div>
+      </nav>
+      {/* <!-- FOR MOBILE .//end  --> */}
+      <header class="section-header mobile-hidden">
+        <div className="header-main bg-white border-bottom py-lg-3 py-2">
+          <div className="container">
+            <div className="row gx-2 align-items-center">
+              <div className="col-xl-2 col-lg col-6 col-sm-6  col-md flex-grow-0">
+                <a href="/" className="brand-wrap me-3">
+                  <img
+                    className="logo"
+                    height="40"
+                    src="/images/logo.jpg"
+                    alt="logo"
+                  />
                 </a>
               </div>
 
-              <div className="col mx-2 text-center">
-                <a
-                  href="#null"
-                  className="text-muted hover:text-dark removeLine"
-                >
-                  <span className="icon-28 fs-5 d-inline-block position-relative">
-                    <i className="fa fa-comment-dots"></i>
-                    <span className="notify">1</span>
-                  </span>
-                  <small className="d-block text-dark text-truncate ">
-                    Message
-                  </small>
-                </a>
+              <div className="col-xl-7 col-lg-5 col-12 col-sm-12 col-md">
+                <form action="#" className="search my-3 my-lg-0 ms-xl-4">
+                  <div className="input-group">
+                    <input
+                      type="search"
+                      className="form-control"
+                      style={{ width: '55%' }}
+                      placeholder="Search"
+                    />
+                    <select className="form-select">
+                      <option value="">All type</option>
+                      <option value="codex">Special</option>
+                      <option value="comments">Only best</option>
+                      <option value="content">Latest</option>
+                    </select>
+                    <button className="btn btn-primary">
+                      <i className="fa fa-search"></i>
+                    </button>
+                  </div>
+                </form>
               </div>
 
-              <div className="col mx-2 text-center">
-                <a
-                  href="#null"
-                  className="text-muted hover:text-dark removeLine"
-                >
-                  <span className="fs-5 d-inline-block">
-                    <i className="fa fa-heart"></i>
-                  </span>
-                  <small className="d-block text-dark text-truncate ">
-                    Orders
-                  </small>
-                </a>
-              </div>
+              <div className="col-xl-3 col-lg-4 col-md-12 col-12">
+                <nav className="d-flex justify-content-end ms-4">
+                  <div className="col mx-2 text-center">
+                    <a
+                      href="#null"
+                      className="text-muted hover:text-dark removeLine"
+                    >
+                      <span className="fs-5 d-inline-block">
+                        <i className="fa fa-user"></i>
+                      </span>
+                      <small className="d-block text-dark text-truncate ">
+                        Profile
+                      </small>
+                    </a>
+                  </div>
 
-              <div className="col mx-2 text-center">
-                <Link
-                  to="/product/cart"
-                  className="text-muted hover:text-dark removeLine"
-                >
-                  <span className="fs-5 d-inline-block">
-                    <i className="fa fa-shopping-cart"></i>
-                  </span>
-                  <small className="d-block text-dark text-truncate">
-                    Cart
-                  </small>
-                </Link>
+                  <div className="col mx-2 text-center">
+                    <a
+                      href="#null"
+                      className="text-muted hover:text-dark removeLine"
+                    >
+                      <span className="icon-28 fs-5 d-inline-block position-relative">
+                        <i className="fa fa-comment-dots"></i>
+                        <span className="notify">1</span>
+                      </span>
+                      <small className="d-block text-dark text-truncate ">
+                        Message
+                      </small>
+                    </a>
+                  </div>
+
+                  <div className="col mx-2 text-center">
+                    <a
+                      href="#null"
+                      className="text-muted hover:text-dark removeLine"
+                    >
+                      <span className="fs-5 d-inline-block">
+                        <i className="fa fa-heart"></i>
+                      </span>
+                      <small className="d-block text-dark text-truncate ">
+                        Orders
+                      </small>
+                    </a>
+                  </div>
+
+                  <div className="col mx-2 text-center">
+                    <Link
+                      to="/product/cart"
+                      className="text-muted hover:text-dark removeLine"
+                    >
+                      <span className="fs-5 d-inline-block">
+                        <i className="fa fa-shopping-cart"></i>
+                      </span>
+                      <small className="d-block text-dark text-truncate">
+                        Cart
+                      </small>
+                    </Link>
+                  </div>
+                </nav>
               </div>
-            </nav>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </header>
+    </>
   );
 };
 
