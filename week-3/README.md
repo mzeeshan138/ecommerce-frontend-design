@@ -1,6 +1,25 @@
-# React app
+# 🛒 React E-commerce App
 
-# Author: Muhammad Zeeshan
+### 👨‍💻 Author: **Muhammad Zeeshan**
+
+A simple and responsive e-commerce application built using **React**.
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+```Terminal/cmd
+# 1️⃣ Change directory to project folder
+cd week-3
+
+# 2️⃣ Install dependencies (requires internet connection)
+npm install
+
+# 3️⃣ Start the development server
+npm start
+```
 
 ## 🧭 App Navigation Guide
 
@@ -11,25 +30,3 @@
 | 📦 **Product Details** | Click a product in **Recommended Products** to see more info                      |
 | 📃 **List View**       | Click a **Category** in the **Banner** section to view products in list style     |
 | 🗃️ **Grid View**       | After selecting a category, click the **Grid Menu Button** to switch to grid view |
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.

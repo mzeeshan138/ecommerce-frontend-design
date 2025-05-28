@@ -12,7 +12,7 @@ Follow these steps to run the project locally:
 
 ```Terminal/cmd
 # 1️⃣ Change directory to project folder
-cd week-3
+cd week-4-6
 
 # 2️⃣ Install dependencies (requires internet connection)
 npm install
